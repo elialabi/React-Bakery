@@ -27,6 +27,7 @@ const CakeForm = ({ addCake }) => {
         setCakeName("");
         setRating("");
         setIngredientsInput("");
+        setPrice("");
     };
 
     
