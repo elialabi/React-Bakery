@@ -2,9 +2,9 @@ import { useState } from "react";
 
 const CakeForm = ({ addCake }) => {
     const [cakeName, setCakeName] = useState("");
-    const [rating, setRating] = useState("");
+    const [rating, setRating] = useState();
     const [ingredientsInput, setIngredientsInput] = useState("");
-    const [price, setPrice] = useState("");
+    const [price, setPrice] = useState();
    
 
   const handleFormSubmit = (e) => {
@@ -27,7 +27,7 @@ const CakeForm = ({ addCake }) => {
         setCakeName("");
         setRating("");
         setIngredientsInput("");
-        setPrice("");
+       
     };
 
     

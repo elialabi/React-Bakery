@@ -48,7 +48,8 @@ const CakeContainer = () => {
 				   price: 8,
 				   rating: 5
 			} 
-		]);
+		  ]
+		);
 
 		const addCake= newCake => {
 			setCakes([...cakes, newCake]);
@@ -68,6 +69,7 @@ const CakeContainer = () => {
 
   return (
     <> 
+
 	 {cakes.map((cake, index) => (
         <Cake key={index} cake={cake} onDelete={deleteCake} />
 	  ))}
